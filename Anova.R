@@ -1,5 +1,5 @@
 My_Anova <- function(Alpha) {
-  
+# This function performs Anova after reading data from Anova.csv 
   x <- read.csv("Anova.csv")
   df <- lapply(x, function(x) x[!is.na(x)])
   mean_vec <- sapply(df, mean)
